@@ -1,0 +1,60 @@
+# ==========================
+# Root .gitignore for SCVS
+# ==========================
+
+# ----- Environment Files -----
+.env
+.env.*
+!.env.example
+
+# ----- Dependencies -----
+node_modules/
+vendor/
+
+# ----- Build / Dist -----
+dist/
+dist-ssr/
+build/
+public/build/
+public/hot
+public/storage
+
+# ----- Logs -----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+storage/logs/
+
+# ----- IDE / Editor -----
+.vscode/
+.idea/
+.fleet/
+.nova/
+.zed/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ----- OS Files -----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ----- PHP / Laravel -----
+.phpunit.result.cache
+.phpunit.cache/
+.phpactor.json
+auth.json
+storage/*.key
+storage/pail/
+composer.phar
+
+# ----- Misc -----
+*.local
+Homestead.json
+Homestead.yaml
